@@ -4,7 +4,5 @@ https://unix.stackexchange.com/questions/87831/how-to-send-keystrokes-f5-from-te
 XPRA:
 https://wiki.archlinux.org/index.php/Xpra
 
-
-https://askubuntu.com/questions/422928/how-to-reinstall-network-manager-without-internet-access
-https://askubuntu.com/questions/682680/keyboard-and-mouse-not-responding-after-fresh-os-install-14-04
-
+wesnoth console commands:
+https://wiki.wesnoth.org/COMMANDMODE 

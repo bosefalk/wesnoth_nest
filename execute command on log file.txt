@@ -1,0 +1,19 @@
+tail -fn0 log_wesnoth.txt
+while read line ; do
+        echo "$line" | grep -qe "joined game"
+        if [ $? = 0 ]
+        then 
+        	sleep 1
+        	xdotool key --window 14680067 colon c o n t r o l space 1 space b o s e Return
+        fi
+done
+
+
+if tail -fn0 log_wesnoth.txt | grep "has left game"
+then sleep 2; xdotool key --window 14680067 Down Return
+fi
+
+# This one works - due to piping?
+tail -F -n0 log_wesnoth.txt | grep --line-buffered 'joined game' | while read ; do sleep 4 & xdotool key --window 14680067 colon c o n t r o l space 1 space b o s e Return ; done
+
+tail -F -n0 log_wesnoth.txtwhile read

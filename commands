@@ -1,0 +1,35 @@
+# See running wesnoth processes: 
+
+# helper commands
+#list all running wesnoth processes
+ps aux | grep wes
+# See open screens and connect
+screen -ls
+screen -r 29223
+
+#############################################
+
+# Launch wesnoth server and write log file
+nohup /usr/src/wesnoth-1.12.6/wesnothd >> ~/log_wesnoth.txt
+
+# Launch wesnoth client
+xpra start :99; DISPLAY=:99 screen
+
+# Open client on local machine
+xpra attach ssh:bosefalk@172.104.131.71:99
+
+
+##########################################
+
+# Look for xserver process to send commands to
+export DISPLAY=:99
+xdotool search --name wesnoth
+
+# 14680067
+
+xdotool key --window 14680067 colon c o n t r o l space 1 space b o s e Return
+
+xdotool key --window 14680067 colon c o n t r o l space 2 space p h o Return
+
+xdotool key --window 14680067 Down Return
+xdotool key --window 14680067 Down Return
