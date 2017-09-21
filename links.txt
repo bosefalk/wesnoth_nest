@@ -5,4 +5,8 @@ XPRA:
 https://wiki.archlinux.org/index.php/Xpra
 
 wesnoth console commands:
-https://wiki.wesnoth.org/COMMANDMODE 
+https://wiki.wesnoth.org/COMMANDMODE
+
+if expr:
+https://stackoverflow.com/questions/9631335/regular-expressions-in-a-bash-case-statement
+ 
