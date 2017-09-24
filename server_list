@@ -1,0 +1,16 @@
+# wesnothd server
+
+
+
+# Felix vs Bose
+# server client:
+screen 3860
+# command logic
+screen -r 17565
+export DISPLAY=:99
+tail -F -n0 log_wesnoth.txt | ~/wesnoth_nest/cmd_wesnoth_FoB.sh
+
+# All 3
+# server client:
+
+# command logic
