@@ -7,10 +7,10 @@ while read line;
         if expr "$line" : '.*\(bose\).*\(joined\).*\(nest\)' >/dev/null;  
 				then xdotool key --window 14680067 colon c o n t r o l space 1 $
  
-        elif expr "$line" : '.*\(felix\).*\(joined\.*\(nest\))' >/dev/null;  
+        elif expr "$line" : '.*\(felix\).*\(joined\.*\(nest\)' >/dev/null;  
                 then xdotool key --window 14680067 colon c o n t r o l space 2 $
                 
-		elif expr "$line" : '.*\(left\.*\(nest\))' >/dev/null;
+		elif expr "$line" : '.*\(left\.*\(nest\)' >/dev/null;
         	then sleep 2; xdotool key --window 14680067 Down Return;  
             sleep 2; xdotool key --window 14680067 Down Return 
         fi
